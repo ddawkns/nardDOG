@@ -1,0 +1,364 @@
+body{
+  background-color: grey;
+  background: grey;
+  /* position: relative; */
+}
+div{
+  display: block;
+}
+p{
+  background-color: #333;
+  color: white;
+  padding: 5px;
+}
+.Grid--withGutter {
+    margin: 0 -5px;
+}
+.Grid {
+    display: block;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.Grid-cell {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+}
+.u-lg-size1of4, .u-lg-size2of8, .u-lg-size3of12 {
+    width: 25%!important;
+}
+.u-lg-size3of4, .u-lg-size6of8, .u-lg-size9of12 {
+    width: 75%!important;
+}
+.u-lg-size2of3, .u-lg-size4of6, .u-lg-size8of12 {
+    width: 85%!important;
+}
+.ProfileSidebar .ProfileHeaderCard, .ProfileSidebar .ProfileUserList, .ProfileSidebar .PhotoRail {
+    margin-bottom: 16px;
+}
+.ProfileSidebar .ProfileHeaderCard, .ProfileSidebar .ProfileTweetbox, .ProfileSidebar .ProfileLifelineInfo, .ProfileSidebar .ProfileUserList, .ProfileSidebar .PhotoRail, .ProfileSidebar .BusinessProfile {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ProfileHeaderCard {
+    margin-top: 35px;
+}
+/* .ProfileTimeline {
+    border: 1px solid #e6ecf0;
+    margin-bottom: -1px;
+} */
+.stream, .stream-container, .stream-items {
+    position: relative;
+    margin-left: 0;
+    list-style: none;
+}
+.stream-item:not(.no-header-background-module) {
+    background: #fff;
+    border-left: 1px solid #e6ecf0;
+    border-right: 1px solid #e6ecf0;
+    background-clip: padding-box;
+}
+.stream-item {
+    position: relative;
+}
+.account, .tweet, .app, .RtbAd-container {
+    position: relative;
+    min-height: 51px;
+    padding: 9px 12px;
+    background-color: #232624;
+    border-bottom: 20px solid grey;
+}
+.container{
+  max-width: 960px;
+  /* margin-left: 50px; */
+  position: absolute;
+  background: gray;
+  font-size: 24px;
+  padding: 25px;
+  right: 0;
+}
+.header-container {
+  width: auto;
+  overflow: hidden;
+  font-family: '33CAE_6_0', monospace;
+  -webkit-font-smoothing: antialiased;
+  background-color: #00ff00;
+  /* border: 1px solid #2d5dcc; */
+  background-color: #363836;
+  padding: .75rem 2rem .75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 2px;
+  min-height: 4rem;
+}
+.header-content{
+  font-size: 50px;
+  color: white;
+  /* padding: 6px 20px; */
+}
+.header-content span{
+  font-weight: bold;
+}
+.header-menu{
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  top: 1.25em;
+}
+.header-btns{
+  position: relative;
+  width: 100%;
+}
+.menu-btn{
+  position: relative;
+  left: 200px;
+}
+#center {
+  overflow: auto;
+}
+/* Slideshow container */
+.entireSlideShow{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+  height: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: -5px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  width: 50%;
+  text-align: center;
+  background-color: #3333ff;
+  font-family: '33CAE_6_0', monospace;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-family: '33CAE_6_0', monospace;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-top: 10px;
+  border: 1px solid #2d5dcc;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: '33CAE_6_0', monospace;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.bio{
+  /* position: relative; */
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#profilePIC{
+  /* display: block; */
+  /* position: absolute; */
+  width:200px;
+  height: 100%;
+  /* margin-left: auto; */
+  /* margin-right: 20px; */
+  /* margin-bottom: 20px; */
+
+  background-color: white;
+  /* clear: both */
+  margin: 0 auto;
+
+}
+.bio-txt{
+  /* border: 2px solid black; */
+  clear: both;
+  /* right:0px; */
+  /* float: right; */
+  /* width: 75%; */
+  /* position: relative; */
+  /* padding: 0px 10px; */
+  /* background-color: #333; */
+}
+#p1{
+  border: 2px solid black;
+}
+#p1 span{
+  /* background-color: black; */
+  color: white;
+  font-size: 10pt;
+  /* font-weight: bold; */
+  font-family: '33CAE_6_0', monospace;
+}
+.parallax{
+  /* background: url('img/nardTKL.jpeg') no-repeat center; */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+.video{
+  position: absolute;
+}
+.answer {
+  border: 1px solid #2d5dcc;
+  background-color: #141e3b;
+  padding: .75rem 2rem .75rem 1rem;
+  border-radius: 50px;
+
+  min-height: 1rem;
+  width: 300px;
+  cursor: pointer;
+
+  transition: .25s;
+  color: white;
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 80%;
+
+  text-align: center;
+  font-family: '33CAE_6_0', monospace;
+}
+
+.parallaxx{
+  background: url('img/nardPRSP.jpeg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.parallaxxx{
+  background: url('img/nardTKL.jpeg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+
+}
