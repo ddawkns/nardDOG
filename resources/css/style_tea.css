@@ -3,9 +3,10 @@
 body {
     margin: 0;
     font-family: "Helvetica", sans-serif;
+    font-family: "poppins-extralight", "poppins", sans-serif;
     color: seashell;
     background-color: black;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
   }
   
@@ -81,6 +82,78 @@ nav span{
     background-color: black;
     width: 100%;
 }
+
+/* Intro Banner */
+#intro .banner{
+    height: 400px;
+}
+
+.banner h1{
+    font-size: 72px;
+    width: 780px;
+}
+
+.banner p{
+    width: 780px;
+}
+
+/* About Me */
+
+#aboutMe{
+    height: 700px;
+    background-color: #FF5A4E;
+    margin-top: 5px;
+
+}
+
+#aboutMe .flex-container{
+    
+}
+
+#aboutMe .section{
+    height:500px;
+    width: 500px;
+    margin: 10% 0;
+    
+    background-color: #FFFFFF;
+}
+
+#aboutMe h2{
+    color: #ff5a4e;
+    margin-top: 12%;
+}
+
+#aboutMe p{
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    /* margin-top: 15%; */
+    margin: 0 15%;
+}
+
+.section .connect{
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+
+    height: 40px;
+    width: 132px;
+    background-color: burlywood;
+
+    margin: 5% auto;
+}
+
+.connect span{
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.section.img{
+    background-image: url(../img/nardKENNEDY.png);
+}
+
 
 /* Store Section  */
 
